@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #eeeeee;
+    height: auto;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: .1rem;
+    font-style: italic;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 5px 0px 5px rgba(0,0,0,0.1),
+    -5px 0px 5px rgba(0,0,0,0.1);
+}
+
+#landing {
+    background: #fff;
+}
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#landing-text h2 {
+    color: rgb(124, 121, 121);
+    font-size: 1rem;
+    padding-top: .8rem;
+}
+
+#landing-image {
+    background: url(../img/11.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+.btn {
+    padding: 0.7rem 2.5rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    background: #0F0E0F;
+    color: #eee;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    background: #2F2E33;
+}
+
+#header {
+    margin-bottom: .3rem;
+    padding: 1.5rem;
+    text-align: center;
+    background: #2F2E33;
+    color: #eee;
+    font-weight: 500;
+}
+
+#header h2 {
+    border-left: .2rem #ccc solid;
+    border-right: .2rem #ccc solid;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.caption h3 {
+    font-style: italic;
+}
+
+footer {
+    max-width: 900px;
+    text-align: center;
+    margin: auto;
+    background: #2F2E33;
+    color: rgb(252, 252, 252);
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+    letter-spacing: .1rem;
+    padding-bottom: 1rem;
+}
+
+.footer {
+    padding: 1rem;
+}
+
+.footer-details {
+    font-style: italic;
+    color: #ccc;
+    padding-bottom: 1.5rem;
+}
+
+.info {
+    letter-spacing: .1rem;
+    text-align: right;
+    font-size: .9rem;
+    padding-right: 1rem;
+}
+
+strong {
+    letter-spacing: .1rem;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+/* -------- Screen size 500px and up --------*/
+
+@media (min-width: 500px) {
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+    #landing-image {
+        height: 100vh;
+    }
+}
+
+
+/* -------- Screen size 700px and up --------*/
+
+@media(min-width: 700px) {
+
+    .btn {
+        padding: 1rem 3rem;
+        font-size: 1rem;
+        letter-spacing: .2rem;
+    }
+}
